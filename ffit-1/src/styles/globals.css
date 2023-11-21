@@ -25,3 +25,14 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.markdown {
+  all: revert;
+}
+
+.markdown h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.markdown p {
+}
