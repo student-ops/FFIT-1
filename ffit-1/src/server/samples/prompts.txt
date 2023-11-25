@@ -1,0 +1,4 @@
+{"role": "system", "content": "You are a helpful assistant designed to output JSON"},
+{ "role": "user", "content": ""Please translate the subtitles of the given English video into Japanese. Then reply as an article described as mark donw. Again, please reply in md format. }
+
+{"role": "assistant", "content": "" },
