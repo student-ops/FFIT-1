@@ -35,5 +35,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 *.env
+<<<<<<< HEAD
 **/assets/ignored
 
+=======
+>>>>>>> 414b85e (add openai sdk and it's sample)

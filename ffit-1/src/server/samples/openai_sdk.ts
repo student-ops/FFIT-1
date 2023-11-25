@@ -10,6 +10,7 @@ const openai = new OpenAI({
 async function main() {
     const stream = await openai.chat.completions.create({
         model: 'gpt-4',
+<<<<<<< HEAD
         messages: [
             { "role": "system", "content": "You are a helpful assistant." },
             { "role": "user", "content": "Who won the world series in 2020?" },
@@ -17,6 +18,9 @@ async function main() {
             { "role": "user", "content": "Where was it played?" }
         ]
 
+=======
+        messages: [{ role: 'user', content: 'Say this is a test' }],
+>>>>>>> 414b85e (add openai sdk and it's sample)
     });
     console.log(stream.choices[0].message);
 }
