@@ -1,7 +1,7 @@
 // pages/index.js
 import React, { useState, FormEvent } from "react";
 import axios from "axios";
-import { marked } from "marked";
+import * as marked from "marked-ts";
 
 const Home: React.FC = () => {
   const [input, setInput] = useState<string>("");
@@ -14,7 +14,7 @@ const Home: React.FC = () => {
       setLoading(true);
       try {
         const response = await axios.get<string>("/api/hello");
-        setMarkdownContent(marked(response.data));
+        setMarkdownContent(marked.Marked.parse(response.data));
       } catch (error) {
         console.error("Error fetching markdown:", error);
         setMarkdownContent("");
