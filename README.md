@@ -40,9 +40,20 @@ SHOW DATABASES;
 
 create table fruits (
   name varchar(255),
-  price int
+  price int,
+  farmer id ,
+);
+
+create table farmers (
+  id int,
+  name varchar(255),
+  address varchar(255),
 );
 
 SHOW TABLES;
+
+INSERT INTO fruits (name, price) VALUES ('apple', 100);
+
+SELECT * FROM fruits;
 
 ```
