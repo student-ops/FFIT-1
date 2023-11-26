@@ -22,3 +22,38 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Qiita Zenn のようなデザイン
 
 ## 意識したい非機能要件
+
+## DB 操作
+
+```
+mysql -u root -p
+
+## password rooot
+SELECT USER();
+
+create database test1;
+use test1;
+
+SELECT DATABASE();
+SHOW DATABASES;
+
+
+create table fruits (
+  name varchar(255),
+  price int,
+  farmer id ,
+);
+
+create table farmers (
+  id int,
+  name varchar(255),
+  address varchar(255),
+);
+
+SHOW TABLES;
+
+INSERT INTO fruits (name, price) VALUES ('apple', 100);
+
+SELECT * FROM fruits;
+
+```
