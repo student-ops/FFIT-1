@@ -13,10 +13,3 @@ export async function UrlToMdArticle(url: string) {
     if (json_response.message.content === null) return "failed"
     else return json_response.message.content;
 }
-
-async function main() {
-    const res = await UrlToMdArticle("https://www.youtube.com/watch?v=2hXNd6x9sZs")
-    console.log(res);
-}
-
-main()
