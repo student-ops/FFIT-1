@@ -34,5 +34,15 @@ body {
   font-weight: bold;
 }
 
+.markdown h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.markdown h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
 .markdown p {
 }
