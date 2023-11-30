@@ -36,3 +36,16 @@ body {
 
 .markdown p {
 }
+
+#index-main{
+  min-height: 100vh;
+}
+
+#index-tab{
+  background-color: #aaddff;
+}
+@media screen and (min-width:767px) {
+  #index-main{
+    display: flex;
+  }
+}
