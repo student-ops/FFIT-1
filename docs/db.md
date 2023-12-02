@@ -4,6 +4,7 @@ User ||--o{ Article : "created by user"
 
 User {
     id  String
+    name string
 }
 
 Article {
