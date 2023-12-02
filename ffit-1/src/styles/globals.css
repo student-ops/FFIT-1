@@ -36,3 +36,44 @@ body {
 
 .markdown p {
 }
+
+#index-main{
+  min-height: 100vh;
+}
+
+#index-tab{
+  background-color: #aaddff;
+  color: #008;
+}
+#index-tab hr{
+  border-color: #008;
+}
+
+#index-window {
+  background-color: #def;
+  width: 100%;
+  padding: 1em;
+}
+
+button {
+  background-color: #24f;
+  color: #fff;
+  border-radius: 2pt;
+  padding: 0.1em 1em;
+  font-size: 0.8em
+}
+
+input {
+  border-radius: 2pt;
+  font-size: 0.8em;
+  padding: 0.1em;
+}
+@media screen and (min-width:767px) {
+  #index-main{
+    display: flex;
+  }
+
+  #index-tab{
+    width: 15vw;
+  }
+}

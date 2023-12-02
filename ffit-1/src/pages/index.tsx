@@ -1,13 +1,19 @@
-import Link from "next/link"; // Link コンポーネントをインポート
 
 import { Inter } from "next/font/google";
+import { Tab } from "./tab";
+import { MainWindow } from "./main"
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <h1>
-      <Link href="/samples">Go to samples</Link>
-    </h1>
+    <div id="index-main">
+      <div id="index-tab">
+        <Tab />
+      </div>
+      <div id="index-window">
+        <MainWindow />
+      </div>
+    </div>
   );
 }
