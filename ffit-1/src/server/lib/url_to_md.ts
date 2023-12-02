@@ -14,9 +14,12 @@ export async function UrlToMdArticle(url: string) {
     else return json_response.message.content;
 }
 
-async function main() {
-    const res = await UrlToMdArticle("https://www.youtube.com/watch?v=2hXNd6x9sZs")
-    console.log(res);
+async function UrlToSubtile(url: string) {
+    const transcript = await YoutubeTranscript.fetchTranscript(url)
+    console.log(typeof transcript)
+    if (!url.includes("https://www.youtube.com/watch?v=")) {
+        return new Error("not youtube url")
+    }
+    const subtile = transcript.map(element => element.text).join("");
+    return subtile
 }
-
-main()
