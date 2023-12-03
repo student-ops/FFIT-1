@@ -89,6 +89,14 @@ iframe {
   margin-bottom: 1em;
 }
 
+.title-div{
+  width: 100%;
+}
+.title-div:hover{
+  background-color: #24f;
+  color: #fff;
+}
+
 @media screen and (min-width:767px) {
   #index-main{
     display: flex;

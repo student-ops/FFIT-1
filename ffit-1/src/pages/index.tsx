@@ -7,7 +7,7 @@ import { useState } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [titles, setTitles] = useState(["title"]);
+  const [titles, setTitles] = useState(["title1","title2"]);
   return (
     <div id="index-main">
       <div id="index-tab">

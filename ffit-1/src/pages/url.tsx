@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Url: React.FC<Function> = (prop) => {
+const Url: React.FC = (prop) => {
 
   const [url, setUrl] = useState("");
 
