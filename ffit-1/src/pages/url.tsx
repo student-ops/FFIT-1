@@ -1,9 +1,17 @@
-const Url: React.FC = () => {
+import { useState } from "react";
+
+const Url: React.FC<Function> = (prop) => {
+
+  const [url, setUrl] = useState("");
+
+  function tappedCreateButton() {
+    prop.tapped(url);
+  }
   return (
     <>
       <div style={{display: "flex"}}>
-        <input type="text" placeholder="URL" style={{width: "calc(100% - 53px - 1em)"}} />
-        <button style={{marginLeft: "1em", marginRight: "0"}}>生成</button>
+        <input type="text" placeholder="URL" style={{width: "calc(100% - 53px - 1em)"}} value={url} onChange={(event) => setUrl(event.target.value)} />
+        <button style={{marginLeft: "1em", marginRight: "0"}} onClick={tappedCreateButton}>生成</button>
       </div>
     </>
   );

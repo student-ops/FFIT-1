@@ -68,6 +68,27 @@ input {
   font-size: 0.8em;
   padding: 0.1em;
 }
+
+iframe {
+  border: 1px solid #008;
+  min-width: 40vw;
+  height: 22.5vw;
+}
+
+#index-iframe-article{
+  padding-top: 1em;
+  height: 100%;
+}
+
+#index-article{
+  padding: 1em;
+  border: #ff0 solid 1px;
+  background-color: #ffd;
+  margin-left: 1em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
 @media screen and (min-width:767px) {
   #index-main{
     display: flex;
@@ -75,5 +96,9 @@ input {
 
   #index-tab{
     width: 15vw;
+  }
+
+  #index-iframe-article{
+    display: flex;
   }
 }
