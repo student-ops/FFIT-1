@@ -1,14 +1,15 @@
 ```mermaid
 erDiagram
-Customer ||--o{ Order : places
-Customer {
-int id PK
-string name
-string email
+User ||--o{ Article : "created by user"
+
+User {
+    id  String
+    name string
 }
-Order {
-int id PK
-string orderDate
-int customerId FK
+
+Article {
+    id  String PK
+    user_id String FK
+    content String "Markdwon"
 }
 ```

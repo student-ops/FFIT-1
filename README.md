@@ -23,12 +23,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 意識したい非機能要件
 
-## DB 操作
+# DB 操作
+
+## MySQL
 
 ```
 mysql -u root -p
 
 ## password rooot
+
+
+```
+
 SELECT USER();
 
 create database test1;
@@ -36,6 +42,8 @@ use test1;
 
 SELECT DATABASE();
 SHOW DATABASES;
+
+```
 
 
 create table fruits (
