@@ -32,16 +32,36 @@ body {
 .markdown h1 {
   font-size: 2.25rem;
   font-weight: bold;
+  padding: none;
 }
 
 .markdown h2 {
   font-size: 1.5rem;
+  font-size: 1.25rem;
+
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
   font-weight: bold;
 }
 
 .markdown h3 {
   font-size: 1.25rem;
+  margin-top: 0.3em;
   font-weight: bold;
+}
+
+.markdown code {
+  background-color: #eee;
+  padding: 0.1em 0.2em;
+  margin: 0 0.1em;
+  border-radius: 2pt;
+  color: #eb5757;
+}
+
+.markdown blockquote {
+  border-left: 4px solid #ccc;
+  margin: 1em 0;
+  padding-left: 1em;
 }
 
 .markdown p {
