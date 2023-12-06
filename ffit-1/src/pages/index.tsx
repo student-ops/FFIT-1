@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import { Tab } from "@/components/Index/Tab";
+import { SideBar } from "@/components/Index/SideBar";
 import { BodyWrapper } from "@/components/Index/BodyWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div id="index-main">
         <div id="index-tab">
-          <Tab />
+          <SideBar />
         </div>
         <div id="index-window">
           <BodyWrapper />
