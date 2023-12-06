@@ -1,19 +1,20 @@
-
 import { Inter } from "next/font/google";
-import { Tab } from "./tab";
-import { MainWindow } from "./main"
+import { SideBar } from "@/components/Index/SideBar";
+import { BodyWrapper } from "@/components/Index/BodyWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div id="index-main">
-      <div id="index-tab">
-        <Tab />
+    <>
+      <div id="index-main">
+        <div id="index-tab">
+          <SideBar />
+        </div>
+        <div id="index-window">
+          <BodyWrapper />
+        </div>
       </div>
-      <div id="index-window">
-        <MainWindow />
-      </div>
-    </div>
+    </>
   );
 }
