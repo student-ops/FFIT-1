@@ -44,7 +44,7 @@ const BodyWrapper: React.FC = () => {
 
   return (
     <>
-      <div className="flex px-3">
+      <div className="flex mx-10">
         <input
           type="text"
           placeholder="URL"
@@ -63,20 +63,22 @@ const BodyWrapper: React.FC = () => {
       </div>
       <p>{url}</p>
 
-      <div className="flex mx-10 justify-center">
+      <div className="flex mx-10 justify-center bg-white">
         <div className="w-1/2 flex justify-center">
-          <div className="w-11/12 " style={{ marginTop: "20%" }}>
+          <div className="w-11/12 py-14">
             <iframe
               className="w-full aspect-video"
               src={`https://www.youtube.com/embed/${videoId}`}
             ></iframe>
           </div>
         </div>
-        <div className="w-1/2">
-          <div
-            className="markdown"
-            dangerouslySetInnerHTML={{ __html: markdownContent }}
-          />
+        <div className="w-1/2 py-12">
+          <div style={{ width: "95.8%", marginRight: "4.2%" }}>
+            <div
+              className="markdown"
+              dangerouslySetInnerHTML={{ __html: markdownContent }}
+            />
+          </div>
         </div>
       </div>
     </>
