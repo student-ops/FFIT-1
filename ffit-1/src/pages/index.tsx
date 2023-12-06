@@ -1,13 +1,20 @@
-import Link from "next/link"; // Link コンポーネントをインポート
-
 import { Inter } from "next/font/google";
+import { SideBar } from "@/components/Index/SideBar";
+import { BodyWrapper } from "@/components/Index/BodyWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <h1>
-      <Link href="/samples">Go to samples</Link>
-    </h1>
+    <>
+      <div id="index-main">
+        <div id="index-tab">
+          <SideBar />
+        </div>
+        <div id="index-window">
+          <BodyWrapper />
+        </div>
+      </div>
+    </>
   );
 }

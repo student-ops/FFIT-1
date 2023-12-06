@@ -6,7 +6,7 @@ const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY, // defaults to process.env["OPENAI_API_KEY"]
 });
 
-export async function TextToMarkdownArticle(text: string) {
+export async function TextToMarkdownArticle(text: string): Promise<OpenAI.Chat.Completions.ChatCompletion.Choice> {
     const messages: OpenAI.Chat.Completions.ChatCompletionMessageParam[] = [
         {
             role: "user",

@@ -5,5 +5,12 @@ export type Section = {
 }
 
 export type Article = {
-    Sentence: Sentence[];
+    id: string;
+    user_id: string;
+    content: string;
+}
+
+export type User = {
+    id: string;
+    name: string;
 }
