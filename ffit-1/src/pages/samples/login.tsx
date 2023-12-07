@@ -1,4 +1,5 @@
 import { useSession, signIn, signOut } from "next-auth/react";
+import Image from "next/image";
 
 export default function CamperVanPage() {
   const { data: session, status } = useSession();
@@ -13,7 +14,10 @@ export default function CamperVanPage() {
       <>
         <p>Signed in as {userEmail}</p>
         <button onClick={() => signOut()}>Sign out</button>
-        <img src="https://cdn.pixabay.com/photo/2017/08/11/19/36/vw-2632486_1280.png" />
+        <Image
+          src="https://cdn.pixabay.com/photo/2017/08/11/19/36/vw-2632486_1280.png"
+          alt="VW Camper Van"
+        />
       </>
     );
   }
