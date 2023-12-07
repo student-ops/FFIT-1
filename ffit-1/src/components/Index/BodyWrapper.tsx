@@ -1,7 +1,6 @@
 import React, { useState, useEffect, use } from "react";
 import { Marked } from "@ts-stack/markdown";
 import axios from "axios";
-import { Margarine } from "next/font/google";
 
 const BodyWrapper: React.FC = () => {
   const [url, setUrl] = useState("");
@@ -40,7 +39,7 @@ const BodyWrapper: React.FC = () => {
 
   useEffect(() => {
     const videoid = url.match(/v=(.*)/)?.[1];
-    if (url === "test") {
+    if (url.includes("5C_HPTJg5ek")) {
       setVideoId("5C_HPTJg5ek");
     } else {
       setVideoId(videoid || "");
@@ -71,8 +70,7 @@ const BodyWrapper: React.FC = () => {
           生成
         </button>
       </div>
-      <p>{url}</p>
-      <div className="flex mx-10 justify-center bg-white">
+      <div className="flex mt-8 mx-10 justify-center bg-white h-full">
         <div className="w-1/2 flex justify-center">
           <div className="w-11/12 py-14">
             <iframe
@@ -81,12 +79,14 @@ const BodyWrapper: React.FC = () => {
             ></iframe>
           </div>
         </div>
-        <div className="w-1/2 py-12">
+        <div className="w-1/2 py-12 h-full">
           <div style={{ width: "95.8%", marginRight: "4.2%" }}>
             {loading ? (
-              <div className="flex items-center justify-center w-2/3 mx-auto ">
-                <h1 className="">Loding ...</h1>
-                <progress className="progress"></progress>
+              <div className="flex h-full flex-col items-center justify-center w-2/3 mx-auto mt-16">
+                <p className="text-l">
+                  Loding ... <br></br>Plese wait ...{" "}
+                </p>
+                <progress className="progress w-2/3"></progress>
               </div>
             ) : (
               <div
