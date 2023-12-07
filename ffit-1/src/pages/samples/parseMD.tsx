@@ -1,4 +1,3 @@
-// pages/index.js
 import React, { useState, FormEvent } from "react";
 import axios from "axios";
 import { Marked } from "@ts-stack/markdown";
