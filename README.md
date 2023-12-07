@@ -23,6 +23,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 意識したい非機能要件
 
+# API
+
+localhost:3000
+/api/urlMD
+
+### curl
+
+```
+export ADDRESS="http://localhost:3000"
+curl -X POST $ADDRESS/api/videoUrl -H "Content-Type: application/json" -d '{"url": "test"}'
+
+```
+
 # DB 操作
 
 ## MySQL
